@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VII</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+  </head>
+  <body>
+
+			<!-- Container -->
+			<div class="container-fluid main-wrapper">
+
+        <!-- Row -->
+        <div class="form-row">
+
+          <!-- Column -->
+          <div class="col">
+
+            <!-- Form -->
+            <form action="" method="post" class="convert-form">
+
+              <!-- Youtube Link -->
+              <div class="form-group">
+                <input type="text" name="youtube-link" class="form-control form-control-sm" placeholder="https://www.youtube.com/watch?v=vmDDOFXSgAs" required>
+              </div>
+
+              <!-- Selector -->
+              <div class="form-group">
+                <select class="form-control form-control-sm" name="format" required>
+                  <optgroup label="Audio">
+                    <option value="mp3" selected>MP3</option>
+                  </optgroup>
+                  <optgroup label="Video">
+                    <option value="mp4">MP4</option>
+                    <option value="flv">FLV</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Progress -->
+              <div class="progression">
+                <small class="progress-text d-block text-right mb-1">0% Converted</small>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <!-- Submit & Download Button -->
+              <button type="submit" class="btn btn-sm btn-block primary-color convert-button">Convert</button>
+              <a href="javascript:void(0)" class="btn btn-sm btn-block primary-color download-button d-none">Download</a>
+
+            </form>
+            <!-- Form -->
+
+          </div>
+          <!-- Column -->
+
+        </div>
+        <!-- Row -->
+
+			</div>
+			<!-- Container -->
+
+    <!-- Scripts -->
+    <script> window.$ = window.jQuery = require('jquery'); </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./src/js/custom.js"></script>
+
+  </body>
+</html>

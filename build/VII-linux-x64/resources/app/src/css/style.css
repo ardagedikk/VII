@@ -1,0 +1,109 @@
+/*
+================================================================================
+
+  Theme Name : VII
+  Version    : 1.0.0
+  Author     : Arda Gedik
+  Date       : 25/07/2018
+
+================================================================================
+  CSS Documentation
+================================================================================
+
+  1.0.0     - General Options
+  1.1.0     - Box Shadows
+  1.2.0     - Colors
+
+================================================================================
+  1.0.0 - General Options
+================================================================================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin-ext');
+body{
+
+	font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-variant: normal;
+  color  : #000;
+  margin : 10px 0;
+  padding: 0;
+
+}
+
+.form-control,
+.form-control:focus {
+
+  outline: 0;
+  border-color: #CCC;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0;
+
+}
+
+.progress {
+
+  border-radius: 3px;
+  margin-bottom: 1rem;
+
+}
+
+a,
+a:hover {
+  color: #FFF;
+}
+
+/*
+================================================================================
+  1.1.0 - Box Shadows
+================================================================================
+*/
+
+.raised-shadow {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+.overlay-shadow {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
+}
+
+.sticky-nav-shadow {
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10);
+          box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.10);
+}
+
+.temporary-nav-shadow {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.10);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.10);
+}
+
+.pop-out-shadow {
+  -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.10);
+          box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.10);
+}
+
+/*
+================================================================================
+  1.2.0 - Colors
+================================================================================
+*/
+
+.primary-color,
+.primary-color:focus,
+.primary-color:visited {
+
+  color: #FFF;
+  background: #3F51B5;
+
+}
+
+.progress-bar {
+
+  background: #3F51B5;
+  background: -webkit-linear-gradient(to right, #CCC, #3F51B5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CCC, #3F51B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
