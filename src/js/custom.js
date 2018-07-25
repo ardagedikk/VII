@@ -13,16 +13,17 @@ const downloadButton  = $('.download-button');
 const progressBar     = $('.progress-bar');
 const progressText    = $('.progress-text');
 
-// Temporary
-const uploadPath      = './downloads/';
-
 // Library
+const path            = require('path');
 const fs              = require('fs');
 const ytdl            = require('ytdl-core');
 const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 const ffmpeg          = require('fluent-ffmpeg');
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 module.exports        = ffmpeg;
+
+// Temporary
+const uploadPath      = path.join(__dirname, '/downloads/');
 
 /*
 ================================================================================
