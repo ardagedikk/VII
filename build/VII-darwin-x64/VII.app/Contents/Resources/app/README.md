@@ -1,5 +1,6 @@
 # VII
 
+![](src/img/icon.png)
 > It allows you to download high quality video and audio over Youtube. The video or audio you want to download will be downloaded at the highest quality it supports.
 
 ![](media/Screenshot_1.jpg)

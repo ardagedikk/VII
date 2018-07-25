@@ -96,14 +96,14 @@ a:hover {
 .primary-color:visited {
 
   color: #FFF;
-  background: #3F51B5;
+  background: #EF483E;
 
 }
 
 .progress-bar {
 
-  background: #3F51B5;
-  background: -webkit-linear-gradient(to right, #CCC, #3F51B5);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #CCC, #3F51B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #EF483E;
+  background: -webkit-linear-gradient(to right, #CCC, #EF483E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CCC, #EF483E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
