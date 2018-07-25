@@ -39,6 +39,11 @@ $('.convert-form').on('submit', (event) => {
 
   try {
 
+    // If the directory does not exist
+    if(!fs.existsSync(uploadPath)) {
+      fs.mkdirSync(uploadPath);
+    }
+
     // Start processing when video information is received
     $.when(ytdl.getInfo(url)).then((data) => {
 
