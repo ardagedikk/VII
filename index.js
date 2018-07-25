@@ -21,6 +21,7 @@ let mainWindow;
 function createMainWindow() {
 
 	const win = new BrowserWindow({
+
     width    : 700,
     height   : 237,
     width    : 700,
