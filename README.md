@@ -43,11 +43,12 @@ npm start
 Build the application for specified or all platform:
 
 ```sh
-npm run build-osx
-npm run build-linux
-npm run build-win32
+npm run release-windows
+npm run release-linux
+npm run release-mac
 
-npm run build
+npm run release-linux deb
+npm run release-linux rpm
 ```
 
 
