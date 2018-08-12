@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build-osx": "electron-packager . \"VII\" --platform=darwin --icon ./src/img/icon.icns --out ./build --overwrite",
-    "build-linux": "electron-packager . \"VII\" --platform=linux --icon ./src/img/icon.png --out ./build --overwrite",
-    "build-win32": "electron-packager . \"VII\" --platform=win32 --icon ./src/img/icon.ico --out ./build --overwrite",
-    "build": "electron-packager . \"VII\" --platform=all --icon ./src/img/icon --out ./build --overwrite"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release-linux": "electron-builder --linux",
+    "release-windows": "electron-builder --windows",
+    "release-mac": "electron-builder --mac"
   },
   "keywords": [
     "Youtube",
@@ -29,6 +30,34 @@
   },
   "devDependencies": {
     "electron": "^2.0.4",
-    "electron-packager": "^12.1.0"
+    "electron-packager": "^10.1.0",
+    "electron-builder": "^19.52.1"
+  },
+  "build": {
+    "appId": "com.electron.vii",
+    "productName": "VII",
+    "files": [
+      "!dist",
+      "!release-builds"
+    ],
+    "linux": {
+      "category": "Archiving",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "appImage": {
+      "systemIntegration": "doNotAsk"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "mac": {
+      "target": [
+        "dmg"
+      ]
+    }
   }
 }
