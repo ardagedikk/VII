@@ -1,6 +1,6 @@
 {
   "name": "VII",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "High Quality Youtube Videos Converter",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,9 @@
     "High Quality",
     "VII"
   ],
-  "author": "Arda Gedik <ardagedikk@hotmail.com>",
+  "author": [
+    "Arda Gedik <ardagedikk@hotmail.com>"
+  ],
   "license": "MIT",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.15",
@@ -29,9 +31,8 @@
     "ytdl-core": "^0.20.4"
   },
   "devDependencies": {
-    "electron": "^2.0.4",
-    "electron-packager": "^10.1.0",
-    "electron-builder": "^19.52.1"
+    "electron": "^2.0.7",
+    "electron-builder": "^19.56.2"
   },
   "build": {
     "appId": "com.electron.vii",
@@ -40,21 +41,24 @@
       "!dist",
       "!release-builds"
     ],
+    "appImage": {
+      "systemIntegration": "doNotAsk"
+    },
     "linux": {
+      "icon": "build/icon.png",
       "category": "Archiving",
       "target": [
         "AppImage"
       ]
     },
-    "appImage": {
-      "systemIntegration": "doNotAsk"
-    },
     "win": {
+      "icon": "build/icon.ico",
       "target": [
         "nsis"
       ]
     },
     "mac": {
+      "icon": "build/icon.icns",
       "target": [
         "dmg"
       ]
