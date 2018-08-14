@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=VII
+Comment=High Quality Youtube Videos Converter
+Exec="/opt/VII/vii" %U
+Terminal=false
+Type=Application
+Icon=vii
+Categories=Archiving;

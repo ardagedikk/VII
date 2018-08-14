@@ -1,0 +1,25 @@
+# Maintainer: liberodark
+
+pkgname=vii
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A simple youtube downloader."
+arch=('x86_64')
+url="https://github.com/ardagedikk/VII"
+license=('MIT')
+depends=('xdg-utils')
+source_x86_64=("VII_${pkgver}_amd64.deb")
+source=($pkgname.desktop
+        $pkgname.png)
+sha512sums=('54cf7d6f8a5bb1d31910dcd31ae395a491eff0ac4e9e078f616df1ec0745fcf1bcabb25f702cfaee2dc23732b398e16859dde10efe2aad7197609bdf28998501'
+         '7d20a2f88d671805e241dec177236dd9b7dd78008c183f02ff155e393439f69628aa230d6c7af846bca08a45733446bfa134dd8eb9dec0625f431c87f9a86d6e')
+sha512sums_x86_64=('4fca90b99cd26f4e320c3ab1e8a6cb3e0bd73b72548da4280f5b1fb40c1aaecd330217ee7f1c7d54db47adac374e4c3695e534a01aa30584869a5e89d1f6536c')
+        
+package() {
+  cd $srcdir
+  tar xvf data.tar.xz
+  cp -r opt $pkgdir
+  install -vDm644 $srcdir/$pkgname.desktop $pkgdir/usr/share/applications/$pkgname.desktop
+  install -vDm644 $srcdir/$pkgname.png $pkgdir/usr/share/pixmaps/$pkgname.png
+}
+
